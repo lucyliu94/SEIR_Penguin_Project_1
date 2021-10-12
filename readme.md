@@ -54,10 +54,11 @@ I finally figured it out by looking at my past code. It got fixed when I added t
 
 ```js
 const restartGame = () =>{
-    $p1score.text("0")
-    $p2score.text("0")
     setBoard(questions)
+    state.player1 = 0
+    state.player2 = 0
 }
+
 ```
 
 ### Example Table

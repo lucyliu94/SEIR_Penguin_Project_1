@@ -46,9 +46,10 @@ const chooseAnswer = (event, question) => {
 }
 
 const restartGame = () =>{
-    $p1score.text("0")
-    $p2score.text("0")
     setBoard(questions)
+    state.player1 = 0
+    state.player2 = 0
+    state.which = true
 }
  
 
@@ -74,6 +75,8 @@ const setBoard = (q) => {
 
     $("#restart").on("click", (event)=>{
         restartGame(event)
+        $p1score.text("0")
+        $p2score.text("0")
     })
 
 } 
