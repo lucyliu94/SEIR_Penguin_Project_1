@@ -44,6 +44,10 @@ const chooseAnswer = (event, question) => {
         state.which =!state.which
     }
 }
+
+const restart = () => {
+    
+}
  
  
 
