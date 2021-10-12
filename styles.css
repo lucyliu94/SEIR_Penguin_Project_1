@@ -156,6 +156,10 @@ margin-bottom: 23px;
 
     #player-1, #player-2 {
         width: 100%;
-     
+    }
+
+    #restart {
+        width: 30%;
+        text-align: center;
     }
 }

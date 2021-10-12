@@ -42,6 +42,7 @@ const chooseAnswer = (event, question) => {
     } else {
         setBoard(questions)
         state.which =!state.which
+        alert ("wrong answer")
     }
 }
 
