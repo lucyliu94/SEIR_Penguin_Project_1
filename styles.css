@@ -1,0 +1,117 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #A8D8EA;
+}
+
+h5 {
+    color: black;
+}
+
+/* *************
+** HEADING
+************* */
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+/* *************
+** Question
+************* */
+#question {
+width: 70%;
+padding: 30px;
+border: 3px solid white;
+border-radius: 20px;
+background-color: #AA96DA;
+margin: 10px auto;
+font-size: 30px;
+text-align: center;
+}
+
+/* *************
+** ANSWERS
+************* */
+
+#answer {
+    width: 85%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#answer ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+#answer ul li {
+    width: 40%;
+    height: 40px;
+    background-color: pink;
+    padding-top: 15px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bolder;
+}
+
+#answer li:hover{
+    transform: scale(1.2);
+}
+
+/* *************
+** ScoreBoard
+************* */
+
+#scores {
+    display: flex;
+    width: 70%;
+    justify-content:center;
+    margin: 10px auto;
+}
+
+#player-1, #player-2 {
+    width: 30%;
+    border-radius: 20px;
+    background-color: #FCBAD3;
+    border: 2px solid white;
+    text-align: center;
+    margin: 5px;
+    color:  white;
+}
+
+@media (max-width: 500px){
+    #answer {
+        display: flex;
+    }
+
+    #answer ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+
+    #answer ul li{
+        width: 100%;
+
+        
+    }
+
+
+}
