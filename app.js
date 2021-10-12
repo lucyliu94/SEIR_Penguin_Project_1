@@ -45,10 +45,11 @@ const chooseAnswer = (event, question) => {
     }
 }
 
-const restart = () => {
-    
+const restartGame = () =>{
+    $p1score.text("0")
+    $p2score.text("0")
+    setBoard(questions)
 }
- 
  
 
 const setBoard = (q) => {
@@ -69,9 +70,15 @@ const setBoard = (q) => {
     $("li").off()
     $("li").on("click", (event)=>{
         chooseAnswer(event, randomQuestion)
+    })     
+
+    $("#restart").on("click", (event)=>{
+        restartGame(event)
     })
 
 } 
+
+
 
 const URL = "https://cdn.contentful.com/spaces/fjqzeesozto5/environments/master/entries?access_token=CQ2_DeawViiarL0EFip65aLzs-NMdd7GYTSFUEWNjl4&content_type=triviaq"
 $.ajax(URL)

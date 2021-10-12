@@ -16,7 +16,7 @@ h5 {
     margin: 25px;
     border-radius: 20px;
     border: 1px solid white;
-    box-shadow: 2px 2px grey;
+    box-shadow: 0 0 10px 2px grey;
 }
 
 /* *************
@@ -34,12 +34,14 @@ h1 {
 #question {
 width: 70%;
 padding: 30px;
+box-shadow: 0 0 10px 1px whitesmoke;
 border: 3px solid white;
 border-radius: 20px;
 background-color: #AA96DA;
 margin: 10px auto;
 font-size: 30px;
 text-align: center;
+margin-bottom: 23px;
 }
 
 /* *************
@@ -55,7 +57,6 @@ text-align: center;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-bottom: 40px;
 }
 
 #answer ul {
@@ -77,6 +78,7 @@ text-align: center;
     text-align: center;
     margin: 5px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 #answer li:hover{
@@ -98,10 +100,24 @@ text-align: center;
     width: 30%;
     border-radius: 20px;
     background-color:#FFFFD2;
+    box-shadow: 0 0 7px 2px whitesmoke;
     border: 2px solid white;
     text-align: center;
-    margin: 5px;
+    margin: 20px;
     color:  #AA96DA;
+}
+
+/* *************
+** Button
+************* */
+#restart-btn {
+    text-align: center;
+}
+
+#restart {
+    width: 20%;
+    margin: 20px;
+    font-weight: bolder;
 }
 
 @media (max-width: 550px){
