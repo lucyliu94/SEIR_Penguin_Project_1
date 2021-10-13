@@ -59,9 +59,9 @@ const restartGame = () =>{
 
 const playerTexts = () =>{
     if (state.which){
-        $("#player-turn").text("one")
+        // $("#player-turn").text("one")
     } else if (state.which =!state.which){
-        $("#player-turn").text("nope")
+        // $("#player-turn").text("nope")
     }
 }
 
