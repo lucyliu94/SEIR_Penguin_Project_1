@@ -33,16 +33,18 @@ const chooseAnswer = (event, question) => {
     if (event.target.innerText === question.answer){
         if (state.which){
             state.player1++
+            $("#error-msg").text("")
             state.which =!state.which
         } else {
             state.player2++
+            $("#error-msg").text("")
             state.which =!state.which
         }
         setBoard(questions)
     } else {
         setBoard(questions)
         state.which =!state.which
-        alert ("wrong answer")
+        $("#error-msg").text("WRONG, NEXT PLAYER'S TURN").css("color", "red")
     }
 }
 
