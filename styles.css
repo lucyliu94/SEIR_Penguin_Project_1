@@ -34,7 +34,8 @@ h5 {
 ** HEADING
 ************* */
 .cat-icon {
-    margin: 60px;
+   font-size: 2.5em;
+   margin: 0 auto;
 }
 
 #title {
@@ -42,13 +43,15 @@ h5 {
     border: 1px solid black;
     padding: 30px;
     border-radius: 20px;
-}
+    background-color: #95DAC1;
 
+}
 
 h1 {
     text-align: center;
     margin: 50px auto;
     margin-bottom: 90px;
+    width: 35%;
     
 }
 
@@ -148,7 +151,19 @@ h1 {
     cursor: pointer;
 }
 
-@media (max-width: 500px){
+@media (max-width: 550px){
+    h1 {
+       display: flex;
+       flex-direction: column;
+    }
+
+    /* .cat-icon {
+        margin: auto;
+    }
+    
+    #title {
+       flex-basis: 20%;
+    } */
 
     body {
         width: 100%;

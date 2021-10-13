@@ -57,15 +57,15 @@ const restartGame = () =>{
 }
  
 
-const playerTexts = () =>{
-    if (state.which){
-        // $("#player-turn").text("one")
-    } else if (state.which =!state.which){
-        // $("#player-turn").text("nope")
-    }
-}
+// const playerTexts = () =>{
+//     if (state.which){
+//         $("#player-turn").text("one")
+//     } else if (state.which =!state.which){
+//         $("#player-turn").text("nope")
+//     }
+// }
 
-playerTexts()
+// playerTexts()
 
 const setBoard = (q) => {
     //Getting a random question
@@ -81,8 +81,6 @@ const setBoard = (q) => {
     //update players scores
     $p1score.text(state.player1)
     $p2score.text(state.player2)
-
-    playerTexts()
     
     $("li").off()
     $("li").on("click", (event)=>{
@@ -96,8 +94,6 @@ const setBoard = (q) => {
     })
 
 } 
-
-
 
 const URL = "https://cdn.contentful.com/spaces/fjqzeesozto5/environments/master/entries?access_token=CQ2_DeawViiarL0EFip65aLzs-NMdd7GYTSFUEWNjl4&content_type=triviaq"
 $.ajax(URL)
