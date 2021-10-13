@@ -33,6 +33,10 @@ h5 {
 /* *************
 ** HEADING
 ************* */
+img{
+    width: 1em;
+    height: 0.9em;
+}
 .cat-icon {
    font-size: 2.5em;
    margin: 0 auto;
@@ -51,7 +55,7 @@ h1 {
     text-align: center;
     margin: 50px auto;
     margin-bottom: 90px;
-    width: 35%;
+    width: 45%;
     
 }
 
@@ -153,7 +157,7 @@ h1 {
 
 @media (max-width: 550px){
     h1 {
-    width: 50wh;
+    width: 60%;
     margin: 0 auto;
     }
 
@@ -204,3 +208,7 @@ h1 {
         text-align: center;
     }
 }
+
+/* @keyframes {
+    
+} */
