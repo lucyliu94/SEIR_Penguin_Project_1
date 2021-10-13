@@ -32,10 +32,11 @@ const chooseAnswer = (event, question) => {
     console.log(event)
     if (event.target.innerText === question.answer){
         if (state.which){
-            ("#player-turn").text("Player 1's Turn")
+            $("#error-msg").text("")
             state.player1++
             state.which =!state.which
         } else {
+            $("#error-msg").text("")
             state.player2++
             state.which =!state.which
         }
@@ -56,6 +57,16 @@ const restartGame = () =>{
 }
  
 
+const playerTexts = () =>{
+    if (state.which){
+        $("#player-turn").text("one")
+    } else if (state.which =!state.which){
+        $("#player-turn").text("nope")
+    }
+}
+
+playerTexts()
+
 const setBoard = (q) => {
     //Getting a random question
     const randomIndex = Math.floor(Math.random() * q.length)
@@ -70,6 +81,8 @@ const setBoard = (q) => {
     //update players scores
     $p1score.text(state.player1)
     $p2score.text(state.player2)
+
+    playerTexts()
     
     $("li").off()
     $("li").on("click", (event)=>{
