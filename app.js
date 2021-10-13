@@ -32,12 +32,11 @@ const chooseAnswer = (event, question) => {
     console.log(event)
     if (event.target.innerText === question.answer){
         if (state.which){
+            ("#player-turn").text("Player 1's Turn")
             state.player1++
-            $("#error-msg").text("")
             state.which =!state.which
         } else {
             state.player2++
-            $("#error-msg").text("")
             state.which =!state.which
         }
         setBoard(questions)
@@ -53,6 +52,7 @@ const restartGame = () =>{
     state.player1 = 0
     state.player2 = 0
     state.which = true
+    $("#error-msg").text("")
 }
  
 
