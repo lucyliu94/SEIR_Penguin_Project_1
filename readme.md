@@ -86,6 +86,20 @@ const chooseAnswer = (event, question) => {
 }
 ```
 
+I also tried making another function but it also broke other pieces of the game so I ended up removing it as well. 
+
+```js
+const player = () =>{
+    if (state.which){
+        $("#error-msg").text("one")
+    } else if (state.which = !state.which){
+        $("#error-msg").text("two")
+    }
+}
+
+player()
+```
+
 ## Learnings
 
 I ended up learning that you can also attached gif's in the img src tag which worked well for me in my header.
@@ -96,7 +110,7 @@ I ended up learning that you can also attached gif's in the img src tag which wo
 
 ```
 
-It was my first time trying to make everything responsive so I learned more about using em, vh and wh to keep fonts responsive and aligned within my div's. 
+It was my first time trying to make everything responsive so I learned more about using em, vh and wh to keep fonts responsive and aligned within my div's. I listed an example below. 
 
 ```cs
 

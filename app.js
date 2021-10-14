@@ -31,7 +31,6 @@ const $p2score = $("#player-2 h4")
 const chooseAnswer = (event, question) => {
     console.log(event)
     if (event.target.innerText === question.answer){
-        (event.target).css("background-color", "purple")
         if (state.which){
             state.player1++
             state.which =!state.which
