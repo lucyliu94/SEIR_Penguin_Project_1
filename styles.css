@@ -40,6 +40,8 @@ img{
 .cat-icon {
    font-size: 2.5em;
    margin: 0 auto;
+   animation-name: cat;
+   animation-iteration-count:3s;
 }
 
 #title {
@@ -58,6 +60,11 @@ h1 {
     width: 45%;
     
 }
+
+@keyframes cat {
+    0% {transform:rotate(10deg)}
+    100% {transform:rotate(360deg) scale(2)}
+  }
 
 /* *************
 ** Question
@@ -209,6 +216,9 @@ h1 {
     }
 }
 
-/* @keyframes {
-    
+
+
+/* .current-player {
+    background-color:black;
 } */
+

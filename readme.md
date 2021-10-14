@@ -61,8 +61,48 @@ const restartGame = () =>{
 
 ```
 
-### Example Table
-| Column1 | Column2 |
-|---------|---------|
-| thing1 | thing2 |
-| yadda1 | yadda2 |
+I tried to find ways to add indicators on which player was going but didn't quite figure it out. 
+It ended up leaving the colours on. 
+
+```js
+
+const chooseAnswer = (event, question) => {
+    console.log(event)
+    if (event.target.innerText === question.answer){
+        (event.target).css("background-color", "purple")
+        if (state.which){
+            state.player1++
+            state.which =!state.which
+        } else {
+            state.player2++
+            state.which =!state.which
+        }
+        setBoard(questions)
+    } else {
+
+        setBoard(questions)
+        state.which =!state.which
+    }
+}
+```
+
+## Learnings
+
+I ended up learning that you can also attached gif's in the img src tag which worked well for me in my header.
+
+```html
+
+<img src="https://c.tenor.com/fXB_pZGFK8kAAAAC/cat-jam.gif">
+
+```
+
+It was my first time trying to make everything responsive so I learned more about using em, vh and wh to keep fonts responsive and aligned within my div's. 
+
+```cs
+
+#player-1, #player-2 {
+    width: 80wh;
+    border-radius: 20px;
+}
+```
+

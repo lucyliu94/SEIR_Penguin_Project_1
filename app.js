@@ -31,6 +31,7 @@ const $p2score = $("#player-2 h4")
 const chooseAnswer = (event, question) => {
     console.log(event)
     if (event.target.innerText === question.answer){
+        (event.target).css("background-color", "purple")
         if (state.which){
             state.player1++
             state.which =!state.which
@@ -40,9 +41,9 @@ const chooseAnswer = (event, question) => {
         }
         setBoard(questions)
     } else {
+
         setBoard(questions)
         state.which =!state.which
-        // $("#error-msg").text("WRONG, NEXT PLAYER'S TURN").css("color", "red")
     }
 }
 
@@ -54,6 +55,17 @@ const restartGame = () =>{
     $("#error-msg").text("")
 }
 
+
+
+// const player = () =>{
+//     if (state.which){
+//         $("#error-msg").text("one")
+//     } else if (state.which = !state.which){
+//         $("#error-msg").text("two")
+//     }
+// }
+
+// player()
 
 
 const setBoard = (q) => {
@@ -80,21 +92,8 @@ const setBoard = (q) => {
         restartGame(event)
         $p1score.text("0")
         $p2score.text("0")
-    })
-
+    })    
 } 
-
-
- //toggle?
-
-    // if (state.which){
-    //     $("#player-1 h3").("color","green")
-    // } else if (state.which = false) {
-    //     $("#player-2 h3").css("color","green")
-    // }
-
-
-
 
 const URL = "https://cdn.contentful.com/spaces/fjqzeesozto5/environments/master/entries?access_token=CQ2_DeawViiarL0EFip65aLzs-NMdd7GYTSFUEWNjl4&content_type=triviaq"
 $.ajax(URL)
